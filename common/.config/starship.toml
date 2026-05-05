@@ -1,0 +1,30 @@
+add_newline = true
+command_timeout = 500
+format = "[$directory]($style)${custom.git_branch}$terraform$cmd_duration$character"
+
+[character]
+error_symbol = "[𝗫](bold red)"
+success_symbol = "[λ](bold green)"
+
+[directory]
+truncation_length = 2
+truncation_symbol = "…/"
+repo_root_style = "bold cyan"
+repo_root_format = "[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
+
+[git_branch]
+disabled = true
+
+[custom.git_branch]
+command = 'git branch --show-current 2>/dev/null'
+when = 'git rev-parse --is-inside-work-tree 2>/dev/null'
+shell = ["zsh", "--no-rcs"]
+format = "[󰘬 $output](bold #FFBF00) "
+
+[cmd_duration]
+min_time = 500
+format = "[⏱ $duration]($style) "
+
+[terraform]
+symbol = "󱁢 "
+format = 'via [$symbol$workspace]($style) '

@@ -1,0 +1,23 @@
+scrollback-limit = 20000000
+
+# Appearance
+font-size = 15
+font-family = JetBrainsMonoNL Nerd Font
+font-feature = -liga
+font-thicken = true
+cursor-style = block
+macos-titlebar-style = tabs
+#theme = Monokai Pro Light
+
+# Window
+window-padding-x = 16
+window-padding-y = 16
+unfocused-split-opacity = 1
+split-divider-color = #000000
+
+# Behavior
+mouse-hide-while-typing = true
+shell-integration-features = no-cursor
+window-inherit-working-directory = true
+working-directory = ~/
+

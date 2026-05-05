@@ -1,0 +1,6 @@
+{
+  "lastChangelogVersion": "0.73.0",
+  "defaultProvider": "ollama",
+  "defaultModel": "gemma4:26b",
+  "sessionDir": "/Volumes/pi-sessions"
+}

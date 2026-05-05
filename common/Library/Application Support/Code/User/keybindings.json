@@ -1,0 +1,144 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "command": "workbench.view.scm",
+    "key": "shift+cmd+r"
+  },
+  {
+    "command": "-workbench.view.scm",
+    "key": "ctrl+shift+g"
+  },
+  {
+    "command": "workbench.action.terminal.clear",
+    "key": "shift+cmd+k",
+    "when": "terminalFocus"
+  },
+  {
+    "command": "-workbench.action.terminal.clear",
+    "key": "cmd+k",
+    "when": "terminalFocus"
+  },
+  {
+    "command": "workbench.view.extension.dockerView",
+    "key": "shift+cmd+d"
+  },
+  {
+    "command": "workbench.view.extension.brewExplorer",
+    "key": "shift+cmd+b"
+  },
+  {
+    "command": "workbench.view.extension.liveshare",
+    "key": "shift+cmd+i"
+  },
+  {
+    "command": "editor.action.revealDefinition",
+    "key": "alt+cmd+right",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "command": "-editor.action.revealDefinition",
+    "key": "f12",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "command": "workbench.view.extension.github-pull-requests",
+    "key": "shift+cmd+g"
+  },
+  {
+    "command": "workbench.action.terminal.toggleTerminal",
+    "key": "ctrl+alt+t"
+  },
+  {
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "key": "ctrl+alt+t"
+  },
+  {
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "key": "ctrl+`"
+  },
+  {
+    "command": "editor.action.toggleWordWrap",
+    "key": "shift+alt+z"
+  },
+  {
+    "command": "-editor.action.toggleWordWrap",
+    "key": "alt+z"
+  },
+  {
+    "command": "editor.action.inspectTMScopes",
+    "key": "cmd+alt+shift+i"
+  },
+  {
+    "command": "testing.runAtCursor",
+    "key": "ctrl+cmd+t"
+  },
+  {
+    "command": "editor.action.goToImplementation",
+    "key": "shift+cmd+i",
+    "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "command": "-editor.action.goToImplementation",
+    "key": "cmd+f12",
+    "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "command": "go.test.cursor",
+    "key": "ctrl+cmd+t"
+  },
+  {
+    "command": "editor.action.rename",
+    "key": "ctrl+alt+r",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "-editor.action.rename",
+    "key": "f2",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "references-view.findReferences",
+    "key": "alt+cmd+r",
+    "when": "editorHasReferenceProvider"
+  },
+  {
+    "command": "-references-view.findReferences",
+    "key": "shift+alt+f12",
+    "when": "editorHasReferenceProvider"
+  },
+  {
+    "command": "workbench.action.showAllSymbols",
+    "key": "shift+cmd+."
+  },
+  {
+    "command": "-workbench.action.showAllSymbols",
+    "key": "cmd+t"
+  },
+  {
+    "command": "-expandLineSelection",
+    "key": "cmd+l",
+    "when": "textInputFocus"
+  },
+  {
+    "command": "-expandLineSelection",
+    "key": "cmd+l",
+    "when": "editorTextFocus"
+  },
+  {
+    "command": "workbench.view.extension.continue",
+    "key": "shift+cmd+c"
+  },
+  {
+    "command": "workbench.action.toggleAuxiliaryBar",
+    "key": "alt+cmd+l",
+    "when": "config.workbench.activityBar.location == 'default'"
+  },
+  {
+    "command": "workbench.action.toggleAuxiliaryBar",
+    "key": "alt+cmd+l"
+  },
+  {
+    "command": "-workbench.action.toggleAuxiliaryBar",
+    "key": "alt+cmd+b"
+  }
+]

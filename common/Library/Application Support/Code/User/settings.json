@@ -1,0 +1,254 @@
+{
+	"[csharp]": {
+		"editor.defaultFormatter": "ms-dotnettools.csharp"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+	},
+	"[dockercompose]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[dockerfile]": {
+		"editor.defaultFormatter": "ms-azuretools.vscode-containers"
+	},
+	"[go]": {
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "explicit"
+		},
+		"editor.formatOnSave": true,
+		"editor.snippetSuggestions": "none"
+	},
+	"[haskell]": {
+		"editor.defaultFormatter": "haskell.haskell"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "yzhang.markdown-all-in-one"
+	},
+	"[nginx]": {
+		"editor.defaultFormatter": "raynigon.nginx-formatter"
+	},
+	"[proto3]": {
+		"editor.formatOnSave": true
+	},
+	"[proto]": {
+		"editor.defaultFormatter": "bufbuild.vscode-buf"
+	},
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.autopep8"
+	},
+	"[sql]": {
+		"editor.defaultFormatter": "bradymholt.pgformatter"
+	},
+	"[toml]": {
+		"editor.defaultFormatter": "be5invis.toml"
+	},
+	"[typescript]": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "always"
+		},
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescriptreact]": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "always"
+		},
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[xml]": {
+		"editor.defaultFormatter": "DotJoshJohnson.xml"
+	},
+	"[yaml]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"better-comments.tags": [
+		{
+			"color": "#f00",
+			"strikethrough": false,
+			"tag": "!"
+		},
+		{
+			"color": "#880",
+			"strikethrough": false,
+			"tag": "?"
+		},
+		{
+			"color": "#00f",
+			"strikethrough": false,
+			"tag": "//"
+		},
+		{
+			"color": "#099",
+			"strikethrough": false,
+			"tag": "todo"
+		},
+		{
+			"color": "#f0f",
+			"strikethrough": false,
+			"tag": "*"
+		},
+		{
+			"color": "#c0c",
+			"strikethrough": false,
+			"tag": "fixme"
+		}
+	],
+	"chat.disableAIFeatures": true,
+	"claudeCode.preferredLocation": "sidebar",
+	"claudeCode.selectedModel": "default",
+	"containers.containers.sortBy": "Label",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"diffEditor.wordWrap": "off",
+	"docker.extension.enableComposeLanguageServer": false,
+	"editor.accessibilitySupport": "off",
+	"editor.bracketPairColorization.enabled": false,
+	"editor.detectIndentation": true,
+	"editor.fontFamily": "MonoLisa Nerd Font",
+	"editor.fontLigatures": false,
+	"editor.fontSize": 14,
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.guides.bracketPairs": false,
+	"editor.guides.indentation": true,
+	"editor.inlayHints.enabled": "off",
+	"editor.insertSpaces": false,
+	"editor.matchBrackets": "always",
+	"editor.minimap.enabled": false,
+	"editor.minimap.renderCharacters": false,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.overviewRulerBorder": false,
+	"editor.quickSuggestions": {
+		"strings": "on"
+	},
+	"editor.renderControlCharacters": false,
+	"editor.renderLineHighlight": "all",
+	"editor.renderWhitespace": "none",
+	"editor.rulers": [
+		80
+	],
+	"editor.tabSize": 4,
+	"editor.trimAutoWhitespace": true,
+	"editor.wordWrap": "off",
+	"eslint.workingDirectories": [
+		"./editor",
+		"./utopia-api"
+	],
+	"explorer.confirmDragAndDrop": false,
+	"extensions.ignoreRecommendations": true,
+	"files.associations": {
+		"*.html": "html"
+	},
+	"files.defaultLanguage": "markdown",
+	"files.exclude": {
+		"**/.DS_Store": true,
+		"**/.git": true,
+		"**/.hg": true,
+		"**/.svn": true,
+		"**/CVS": true,
+		"vendor": true
+	},
+	"files.insertFinalNewline": true,
+	"git.autofetch": true,
+	"git.confirmSync": false,
+	"git.enableSmartCommit": true,
+	"git.openRepositoryInParentFolders": "never",
+	"githubPullRequests.createOnPublishBranch": "never",
+	"githubPullRequests.pullBranch": "never",
+	"gitlens.advanced.messages": {
+		"suppressCommitHasNoPreviousCommitWarning": false,
+		"suppressCommitNotFoundWarning": false,
+		"suppressFileNotUnderSourceControlWarning": false,
+		"suppressGitVersionWarning": false,
+		"suppressLineUncommittedWarning": false,
+		"suppressNoRepositoryWarning": false
+	},
+	"go.coverageDecorator": {
+		"coveredGutterStyle": "blockgreen",
+		"coveredHighlightColor": "rgba(64,128,128,0.5)",
+		"type": "gutter",
+		"uncoveredGutterStyle": "blockred",
+		"uncoveredHighlightColor": "rgba(128,64,64,0.25)"
+	},
+	"go.diagnostic.vulncheck": "Off",
+	"go.formatFlags": [
+		"-local=github.com/org,github.com/GetStream/chat"
+	],
+	"go.formatTool": "goimports",
+	"go.testTimeout": "60s",
+	"go.toolsManagement.autoUpdate": true,
+	"go.useLanguageServer": true,
+	"godotTools.editorPath.godot4": "/Applications/Godot.app/Contents/MacOS/Godot",
+	"gopls": {
+		"usePlaceholders": true
+	},
+	"haskell.manageHLS": "GHCup",
+	"haskell.serverExecutablePath": "/Users/federico/.ghcup/bin/haskell-language-server-9.4.2",
+	"markdown.styles": [
+		"https://rawgit.com/easyaspi314/vscode-macOS/master/markdown.css"
+	],
+	"markdownlint.config": {
+		"no-hard-tabs": false
+	},
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "left"
+	},
+	"pgFormatter.functionCase": "uppercase",
+	"pgFormatter.keywordCase": "uppercase",
+	"prettier.requireConfig": true,
+	"prettier.useEditorConfig": false,
+	"python.terminal.activateEnvironment": true,
+	"redhat.telemetry.enabled": false,
+	"search.actionsPosition": "right",
+	"search.followSymlinks": true,
+	"search.smartCase": true,
+	"search.useIgnoreFiles": true,
+	"tailwindCSS.includeLanguages": {
+		"elixir": "html",
+		"phoenix-heex": "html"
+	},
+	"telemetry.telemetryLevel": "off",
+	"terminal.integrated.fontFamily": "MonoLisa Nerd Font",
+	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.lineHeight": 1.23,
+	"window.autoDetectColorScheme": true,
+	"window.commandCenter": false,
+	"window.titleBarStyle": "custom",
+	"workbench.activityBar.location": "top",
+	"workbench.colorTheme": "Monokai Pro",
+	"workbench.editor.editorActionsLocation": "titleBar",
+	"workbench.editor.showIcons": false,
+	"workbench.editor.tabActionLocation": "left",
+	"workbench.editor.tabSizing": "shrink",
+	"workbench.fontAliasing": "default",
+	"workbench.iconTheme": "Monokai Pro Icons",
+	"workbench.layoutControl.enabled": false,
+	"workbench.panel.defaultLocation": "bottom",
+	"workbench.preferredDarkColorTheme": "Monokai Pro",
+	"workbench.preferredLightColorTheme": "Monokai Pro Light",
+	"workbench.secondarySideBar.defaultVisibility": "hidden",
+	"workbench.settings.editor": "json",
+	"workbench.settings.useSplitJSON": false,
+	"workbench.startupEditor": "newUntitledFile",
+	"yaml.format.singleQuote": true,
+	"zenMode.centerLayout": true,
+	"zenMode.fullScreen": true,
+	"zenMode.hideActivityBar": true,
+	"zenMode.hideLineNumbers": true,
+	"zenMode.hideStatusBar": true,
+	"zenMode.restore": false
+}

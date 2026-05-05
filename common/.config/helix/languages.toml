@@ -1,0 +1,82 @@
+[[language]]
+name = "markdown"
+language-servers = ["marksman", "ltex-ls"]
+
+[[language]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports" }
+language-servers = ["gopls", "golangci-lint-lsp"]
+
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer"]
+
+[[language]]
+name = "zig"
+language-servers = ["zls"]
+
+[[language]]
+name = "lua"
+auto-format = true
+
+[[language]]
+name = "html"
+auto-format = false
+indent = { tab-width = 2, unit = " " }
+formatter = { command = "prettier", args = [
+  "--parser",
+  "html",
+  "--tab-width",
+  "2",
+] }
+
+[[language]]
+name = "css"
+indent = { tab-width = 4, unit = " " }
+formatter = { command = "prettier", args = [
+  "--parser",
+  "css",
+  "--tab-width",
+  "2",
+] }
+language-servers = ["css-languageserver"]
+
+[[language]]
+name = "typescript"
+auto-format = false
+indent = { tab-width = 4, unit = " " }
+formatter = { command = "prettier", args = [
+  "--parser",
+  "typescript",
+  "--tab-width",
+  "4",
+] }
+language-servers = ["typescript-language-server"]
+
+[[language]]
+name = "svg"
+scope = ""
+roots = []
+file-types = ["svg"]
+formatter = { command = "svgo", args = ["--pretty", "-"] }
+
+[[language]]
+name = "json"
+formatter = { command = "jq", args = ["."] }
+auto-format = true
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["format", "-"] }
+auto-format = true
+language-servers = ["taplo"]
+
+[language-server.taplo]
+command = "taplo"
+args = ["lsp", "stdio"]
+
+[[language]]
+name = "bash"
+formatter = { command = "shfmt", args = ["-i", "2", "-ci"] }
+auto-format = true

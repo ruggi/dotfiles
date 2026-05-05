@@ -1,0 +1,89 @@
+# Utilities
+# ------------------------------------------------------------------------------
+maybe_source() {
+  [[ -f $1 ]] && source $1
+}
+
+# ------------------------------------------------------------------------------
+
+maybe_source ~/.aliases.base
+maybe_source ~/.aliases
+
+# history management
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_FIND_NO_DUPS
+
+# brew
+# ------------------------------------------------------------------------------
+eval "$(/opt/homebrew/bin/brew shellenv)"
+maybe_source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+maybe_source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# shell
+# ------------------------------------------------------------------------------
+eval "$(starship init zsh)"
+
+# zsh
+# ------------------------------------------------------------------------------
+## Case-insensitive completion
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
+autoload -Uz compinit && compinit
+## Auto cd
+setopt autocd
+
+# ollama
+# ------------------------------------------------------------------------------
+OLLAMA_KEEP_HISTORY=false
+
+# path
+# ------------------------------------------------------------------------------
+export PATH="$PATH:/usr/local/bin"
+export PATH="$PATH:$HOME/go/bin"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.rbenv/bin"
+export PATH="$PATH:$HOME/scripts"
+
+# configs
+# ------------------------------------------------------------------------------
+export XDG_CONFIG_HOME="$HOME/.config"
+
+# helix
+# ------------------------------------------------------------------------------
+export EDITOR=hx
+
+# Add a file or folder to a stow package
+stow_add() {
+  # Usage: stow_add <source_path> <package_name>
+  # Example: stow_add ~/.config/nvim common
+
+  if [ "$#" -ne 2 ]; then
+    echo "Usage: stow_add <source_path> <package_name>"
+    return 1
+  fi
+
+  local DOTFILES_DIR="$HOME/dotfiles"
+  local src_raw="$1"
+  local pkg="$2"
+
+  # 1. Convert to absolute path (handles ~ and relative paths)
+  local src_abs
+  src_abs=$(realpath "$src_raw")
+
+  # 2. Strip the $HOME prefix to get the relative path
+  local rel_path="${src_abs#$HOME/}"
+
+  # 3. Determine the target directory
+  local target_dir="$DOTFILES_DIR/$pkg/$(dirname "$rel_path")"
+
+  # 4. Perform the move
+  echo "Moving $src_raw -> $DOTFILES_DIR/$pkg/$rel_path"
+
+  mkdir -p "$target_dir"
+  mv "$src_abs" "$target_dir/$(basename "$src_abs")"
+
+  echo "Success!"
+}

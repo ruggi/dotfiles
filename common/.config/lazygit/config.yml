@@ -1,0 +1,13 @@
+git:
+  autoFetch: false
+  log:
+    order: default
+    showGraph: never
+  pagers:
+    - colorArg: always
+      pager: delta --dark --paging=never --syntax-theme base16-256 -s
+      useConfig: false
+os:
+  edit: 'hx {{filename}}'
+  editAtLine: 'hx {{filename}}:{{line}}'
+  editAtLineAndWait: 'hx {{filename}}:{{line}}'
