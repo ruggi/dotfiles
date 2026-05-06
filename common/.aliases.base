@@ -1,0 +1,6 @@
+alias vi='nvim'
+alias ls='eza'
+alias l='ls'
+alias ll='eza -l --git'
+alias lt='eza --tree'
+alias vi='hx'
